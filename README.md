@@ -5,7 +5,6 @@ By iterating through .docx files in the specified directory, the script redacts 
 Upon reaching the end of each file, the script generates a latex pdf file in the specified directory.
 
 ## To run
-1. Update variable `N` to reflect the number of documents to convert.
-2. Rename each word document to "#.docx" where # is the count.
-3. Update variable `filename` to the directory path in which the documents can be found.
-4. Update line `doc.generate_pdf('/Users/jane/new companies/' + company, clean_tex=True)` to an appropriate path where the converted pdf files will be stored.
+1. Rename each word document to "#.docx" where # is the count.
+2. Run `python main.py {source directory} {destination directory} {number of files}` in terminal.
+Test example: `python main.py ./new-companies/ ./new-companies/ 2`
